@@ -4,6 +4,48 @@
     cursor: none !important;
 }
 
+@media (pointer: coarse) {
+    .cursor-container {
+        display: none !important;
+    }
+}
+
+@media (pointer: fine) {
+    * {
+        cursor: none !important;
+    }
+    
+    .cursor-container {
+        display: block;
+    }
+}
+
+@media (pointer: coarse) {
+    * {
+        cursor: auto !important;
+    }
+    
+    .cursor-container {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .cursor-container {
+        display: none !important;
+    }
+}
+
+@media (pointer: coarse) {
+    .interactive-element,
+    .btn-primary,
+    .btn-secondary {
+        padding: 1rem 2rem !important;
+        font-size: 1.1rem;
+        min-height: 48px;
+    }
+}
+
 .cursor-container {
     position: fixed;
     top: 0;
@@ -214,7 +256,7 @@ body {
 }
 
 .hero-container {
-    background: rgb(15 15 35 / .7);
+    background: #0f0f23b3;
     backdrop-filter: blur(15px);
     border: 1px solid rgb(0 170 51 / .15);
     border-radius: 20px;

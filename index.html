@@ -102,12 +102,16 @@
                     </div>
 
                     <div class="flex flex-wrap gap-4">
+
+                        <a href="https://discord.com/users/780079091172900884" target="_blank"
+                            class="btn-primary flex items-center gap-2"><i class="fab fa-discord"></i><span>Contact me
+                                on Discord</span></a>
                         <a href="https://github.com/DexterTheDev" target="_blank"
                             class="btn-secondary flex items-center gap-2"><i
                                 class="fab fa-github"></i><span>GitHub</span></a>
-                        <a href="https://discord.com/users/780079091172900884" target="_blank"
+                        <a href="https://discord.gg/2JutPeCS39" target="_blank"
                             class="btn-secondary flex items-center gap-2"><i
-                                class="fab fa-discord"></i><span>Discord</span></a>
+                                class="fab fa-discord"></i><span>Server</span></a>
                         <a href="mailto:ahmedsabry5364@gmail.com" class="btn-secondary flex items-center gap-2"><i
                                 class="fas fa-envelope"></i><span>Email</span></a>
                     </div>
@@ -116,6 +120,62 @@
         </div>
     </section>
 
+    <section id="requestSection" class="section py-20">
+        <div class="container md:w-8/12 mx-auto px-4">
+            <div class="section-header">
+                <h2 class="text-3xl md:text-4xl font-bold">Request a Commission</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="hero-container backdrop-blur-sm rounded-xl p-6 md:p-8 border border-slate-700 shadow-lg">
+                <form id="commissionForm" class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Discord Username</label>
+                        <input type="text" id="discord" required
+                            class="w-full px-4 py-2.5 bg-[#fff0] border border-slate-600 rounded-lg text-white placeholder-slate-400 outline-none"
+                            placeholder="Discord Username">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Project Name</label>
+                        <input type="text" id="project" required
+                            class="w-full px-4 py-2.5 bg-[#fff0] border border-slate-600 rounded-lg text-white placeholder-slate-400 outline-none"
+                            placeholder="Title">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">Deadline</label>
+                            <input type="date" id="deadline" required
+                                class="w-full px-4 py-2.5 bg-[#fff0] border border-slate-600 rounded-lg text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">Budget ($)</label>
+                            <input type="number" id="budget" required min="0" step="0.01"
+                                class="w-full px-4 py-2.5 bg-[#fff0] border border-slate-600 rounded-lg text-white placeholder-slate-400 outline-none"
+                                placeholder="150">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Commission Details</label>
+                        <textarea id="details" required
+                            class="w-full px-4 py-2.5 bg-[#fff0] border border-slate-600 rounded-lg text-white placeholder-slate-400 outline-none resize-none"
+                            placeholder="Describe your idea, references, style, features, etc..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full btn-primary font-semibold py-3 rounded-lg transition-all duration-200 shadow-lg flex items-center justify-center gap-2">
+                        <i class="fab fa-discord"></i> Request Commission
+                    </button>
+                </form>
+
+                <div id="status" class="mt-5 p-3 rounded-lg text-center font-medium hidden"></div>
+            </div>
+            <p class="my-2 text-gray-400">Dexter will reach out once your request is verified. Please ensure all details
+                are accurate.</p>
+        </div>
+    </section>
     <section id="working_on" class="section py-20">
         <div class="container mx-auto px-4">
             <div class="section-header">
